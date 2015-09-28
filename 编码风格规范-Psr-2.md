@@ -29,7 +29,8 @@ PSR-2
 
 例子：以下例子程序简单地展示了以上大部分规范
 
-```
+```php
+
 <?php
 namespace Vendor\Package;
 
@@ -108,7 +109,8 @@ use声明语句块后必须要有一个空白行
 
 例如
 
-```
+```php
+
 <?php
 namespace Vendor\Package;
 
@@ -128,7 +130,8 @@ use OtherVendor\OtherPackage\BazClass;
 
 类的开始花括号必须独占一行，结束花括号也必须在类主体后独占一行 例：
 
-```
+```php
+
 <?php
 namespace Vendor\Package;
 
@@ -144,7 +147,8 @@ class ClassName extends ParentClass implements \ArrayAccess, \Countable
 
 implements的继承列表也可以分成多行，这样的话，每个继承接口名称都必须分开独立成行，包括第一个
 
-```
+```php
+
 <?php
 namespace Vendor\Package;
 
@@ -172,7 +176,8 @@ class ClassName extends ParentClass implements
 
 下面是一个属性声明范例：
 
-```
+```php
+
 <?php
 namespace Vendor\Package;
 
@@ -192,7 +197,8 @@ class ClassName
 
 一个标准的方法声明可以参照以下范例，留意其括号、逗号、空格以及花括号的位置
 
-```  
+```php
+
 <?php
 namespace Vendor\Package;
 
@@ -210,7 +216,8 @@ class ClassName
 
 有默认值的参数，必须放到参数列表的末尾
 
-```
+```php
+
 <?php
 namespace Vendor\Package;
 
@@ -226,7 +233,8 @@ class ClassName
 
 拆分成多行的参数列表后，结束括号以及方法开始括号必须写在同一行，中间用一个空格分隔
 
-```   
+```php
+
 <?php
 namespace Vendor\Package;
 
@@ -245,7 +253,8 @@ abstract、final以及static
 
 需要添加abstract或final声明时，必须写在访问修饰符前，而static则必须写在其后
 
-```
+```php
+
 <?php
 namespace Vendor\Package;
 
@@ -265,7 +274,8 @@ abstract class ClassName
 
 方法及函数调用时，方法名或函数名与参数左括号之间一定不能有空格，参数右括号前也一定不能有空格，每个参数前一定不能有空格，但其后必须有一个空格。
 
-```
+```php
+
 <?php
 bar();
 $foo->bar($arg1);
@@ -273,7 +283,8 @@ Foo::bar($arg2, $arg3);
 ```
 参数可以分列成多行，此时包括每个参数在内的每个参数都必须单独成行
 
-```
+```php
+
 <?php
 $foo->bar(
     $longArgument,
@@ -298,7 +309,8 @@ if 、 elseif 和 else
 
 注意 else 和 elseif 都与前面的结束花括号在同一行。
 
-```
+```php
+
 <?php
 if ($expr1) {
     // if body
@@ -318,7 +330,8 @@ case 语句必须相对 switch 进行一次缩进，而 break 语句以及 case 
 
 如果存在非空的 case 直穿语句，主体里必须有类似 // no break 的注释。
 
-```
+```php
+
 <?php
 switch ($expr) {
     case 0:
@@ -341,7 +354,8 @@ while 和 do while
 
 一个规范的 while 语句应该如下所示，注意其 括号、空格以及花括号的位置。
 
-```
+```php
+
 <?php
 while ($expr) {
     // structure body
@@ -349,7 +363,8 @@ while ($expr) {
 ```  
 标准的 do while 语句如下所示，同样的，注意其 括号、空格以及花括号的位置。
 
-```
+```php
+
 <?php
 do {
     // structure body;
@@ -359,7 +374,8 @@ for
 
 标准的 for 语句如下所示，注意其 括号、空格以及花括号的位置。
 
-```
+```php
+
 <?php
 for ($i = 0; $i < 10; $i++) {
     // for body
@@ -369,7 +385,8 @@ foreach
 
 标准的 foreach 语句如下所示，注意其 括号、空格以及花括号的位置。
 
-```
+```php
+
 <?php
 foreach ($iterable as $key => $value) {
     // foreach body
@@ -379,7 +396,8 @@ try, catch
 
 标准的 try catch 语句如下所示，注意其 括号、空格以及花括号的位置。
 
-```
+```php
+
 <?php
 try {
     // try body
@@ -403,7 +421,8 @@ try {
 
 标准的闭包声明语句如下所示，注意其 括号、逗号、空格以及花括号的位置。
 
-```
+```php
+
 <?php
 $closureWithArgs = function ($arg1, $arg2) {
     // body
@@ -417,7 +436,8 @@ $closureWithArgsAndVars = function ($arg1, $arg2) use ($var1, $var2) {
 
 以下几个例子，包含了参数和变量列表被分成多行的多情况。
 
-```
+```php
+
 <?php
 $longArgs_noVars = function (
     $longArgument,
@@ -465,7 +485,8 @@ $shortArgs_longVars = function ($arg) use (
 ```
 注意，闭包被直接用作函数或方法调用的参数时，以上规则仍然适用。
 
-```
+```php
+
 <?php
 $foo->bar(
     $arg1,
