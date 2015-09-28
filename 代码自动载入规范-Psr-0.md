@@ -19,17 +19,17 @@ PSR-0
 
 例子：
 
-```
+```php
 \Doctrine\Common\IsolatedClassLoader => /path/to/project/lib/vendor/Doctrine/Common\IsolatedClassLoader.php
 ```
 有下划线例子：
 
-```
+```php
 \namespace\package\Class_Name => /path/to/project/lib/vender/namespace/package/Class/Name.php
 ```
 载入样例：
 
-```
+```php
 <?php
 	function autoload($className)
 	{

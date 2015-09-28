@@ -43,7 +43,7 @@ LoggerInterface 接口对外定义了八个方法，分别用来记录 [RFC 5424
 
 以下是一个占位符使用的例子：
 
-```
+```php
 <?php
 /**
   * 用上下文信息替换记录信息中的占位符
@@ -100,7 +100,7 @@ Psr\Log\LogLevel 类装载了八个记录等级常量。
 
 Psr\Log\LoggerInterface
 
-```
+```php
 <?php
 namespace Psr\Log;
 
@@ -231,7 +231,7 @@ Psr\Log\LoggerAwareInterface
 ```
 Psr\Log\LogLevel
 
-```
+```php
 <?php
 namespace Psr\Log;
 

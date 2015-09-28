@@ -37,7 +37,7 @@ PHP代码必须且只可使用不带BOM的utf-8编码
 
 下面是一个反例，一份同时包含声明以及产生从属效应的代码：
 
-```
+```php
 <?php
 //从属效应：修改ini配置
 ini_set('error_reporting', E_ALL);
@@ -56,7 +56,7 @@ function foo()
 ```
 下面是一个范例，一份只包含声明不产生从属效应的代码：
 
-```
+```php
 <?php
 //声明函数
 function foo()
@@ -81,18 +81,18 @@ if(!function_exists('bar')){
 
 PHP5.3及以后的版本代码必须使用正式的命名空间 例如：
 
-```
-	<php
-	//php5.3及以后版本的写法
-	namespace Vendor\Model;
-	
-	class Foo
-	{
-	}
+```php
+<php
+//php5.3及以后版本的写法
+namespace Vendor\Model;
+
+class Foo
+{
+}
 ```
 PHP5.2.x及以前的版本应该使用伪命名空间的写法，约定俗成使用顶级的组织名称如vendor_为类前缀
 
-```
+```php
 <?php
 //5.2.x及以前版本写法
 class Vendor_Model_Foo
@@ -107,7 +107,7 @@ class Vendor_Model_Foo
 
 类常量所有字母必须大写声明，词间以下划线分隔 参照下列代码：
 
-```
+```php
 <?php
 namespace Vendor\Model;
 
